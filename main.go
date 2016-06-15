@@ -8,8 +8,7 @@ import (
 	"text/template"//implementa las plantillas de texto
 	"fmt"//con esta libreria se puede imprimir en la terminal
 	r "github.com/kar004/gorethink"///driver gorethink
-	"github.com/gin-gonic/gin"
-	"os"
+
 )
 
 var addr = flag.String("addr", ":8083", "http service address")//la variable addr contiene la ruta del puerto del servidor
@@ -48,21 +47,6 @@ var conn *r.Session
 	
 	}
 	func main() {
-	port := os.Getenv("PORT")
-
-	if port == "" {
-		log.Fatal("$PORT must be set")
-	}
-	router := gin.New()
-	router.Use(gin.Logger())
-	router.LoadHTMLGlob("prueba2.html")
-
-	router.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "prueba2.html", nil)
-	})
-
-	router.Run(":" + port)
-
 	flag.Parse()//analisis gramatico
 	go h.run()// se corre el hilo del archivo hub
 	http.HandleFunc("/", serveHome)//indica la direccion de ejecucion
