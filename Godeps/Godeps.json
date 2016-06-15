@@ -18,18 +18,13 @@
 			"Rev": "8616e8ee5e20a1704615e6c8d7afcdac06087a67"
 		},
 		{
-			"ImportPath": "github.com/hailocab/go-hostpool",
-			"Rev": "e80d13ce29ede4452c43dea11e79b9bc8a15b478"
-		},
-		{
-			"ImportPath": "github.com/kar004/gorethink",
-			"Comment": "v2.0.4",
-			"Rev": "de072a9c0eff5bd52ef81fe45b6abeccde74bd13"
-		},
-		{
-			"ImportPath": "github.com/kar004/websocket",
+			"ImportPath": "github.com/gorilla/websocket",
 			"Comment": "v1.0.0-12-ga687089",
 			"Rev": "a68708917c6a4f06314ab4e52493cc61359c9d42"
+		},
+		{
+			"ImportPath": "github.com/hailocab/go-hostpool",
+			"Rev": "e80d13ce29ede4452c43dea11e79b9bc8a15b478"
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/pbkdf2",
@@ -38,6 +33,11 @@
 		{
 			"ImportPath": "golang.org/x/sys/unix",
 			"Rev": "d4feaf1a7e61e1d9e79e6c4e76c6349e9cab0a03"
+		},
+		{
+			"ImportPath": "gopkg.in/dancannon/gorethink.v2",
+			"Comment": "v2.0.4",
+			"Rev": "de072a9c0eff5bd52ef81fe45b6abeccde74bd13"
 		},
 		{
 			"ImportPath": "gopkg.in/dancannon/gorethink.v2/encoding",
