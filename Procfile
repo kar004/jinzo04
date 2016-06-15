@@ -1,1 +1,1 @@
-web: jinzo
+web: go run *.go
